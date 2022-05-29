@@ -1,6 +1,7 @@
-<div *ngIf="users; then userfound else usernotfound">
+<ng-container *ngIf="users; then userfound else usernotfound">
     user is true
-</div>
+</ng-container>
+
 
 <ng-template #userfound>
     <div *ngFor="let user of users">
